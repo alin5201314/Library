@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Library</h1>
+        </div>
+        <div class="content">
+            <div class="addBook"> 
+                <dialog>
+                    <form action="" id="bookForm">
+                        <div class="formInputs">
+                            <label for="title">Book Title:</label>
+                            <input type="text" id="title" required>
+                        </div>
+                        <div class="formInputs">
+                            <label for="author">Book Author:</label>
+                            <input type="text" id="author" required>
+                        </div>
+                        <div class="formInputs">
+                            <label for="pages">Number of Pages:</label>
+                            <input type="number" id="pages" required>
+                        </div>
+                        <div class="formInputs">
+                            <label for="read">Finished:</label>
+                            <input type="checkbox" id="read">
+                        </div>
+                        <div class="button-container">
+                            <input type="submit" value="Add" class="addBookButtonClose">
+                            <button class="bookButtonClose">Close</button>
+                        </div>
+                    </form>
+                    <!-- <p>This modal dialog has a groovy backdrop!</p> -->
+                </dialog>
+                <button class="addBookButtonOpen">Add Book</button>
+            </div>
+            <div class="contentCards">
+            </div>
+        </div>
+        <div class="footer">
+            asd
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

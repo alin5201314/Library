@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: minmax(min-content, 13vh) auto minmax(min-content, 5vh);
+}
+.header{
+    background-color:  #06D6A0;
+    padding-left: 2vw;
+}
+.content{
+    display: grid;
+    /* padding: 3vh 1vw; */
+    background-color: #FFD166;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+}
+dialog {
+    position: fixed; /* Or absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Additional styles for the dialog box */
+}
+
+.addBook{
+    display: flex;
+    justify-content: center;
+}
+.addBookButtonOpen {
+    margin: 3vh ;
+    height: 100px;
+    width: clamp(80px,25vw,600px);
+    font-size: clamp(12px,25px,40px);
+}
+.contentCards{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-auto-rows: minmax(350px,1.1fr);
+}
+
+.formInputs{
+    height: 25px;
+    margin: 1vh 1vw;
+}
+
+.addBookButtonClose ,.bookButtonClose{
+    height: 30px;
+    width: 100%;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Aligns one item to each end */
+}
+.bookCard{
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+    background-color: #E76F51;
+}
+.bookCard h2{
+    color: black;
+}
+.cardButtonsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.cardButtons{
+    height: 30px;
+    width: 100%;
+}
+.footer{
+    background-color: #06D6A0;
+}
