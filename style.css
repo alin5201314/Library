@@ -1,7 +1,10 @@
+/* Universal Styles */
 * {
     margin: 0;
     padding: 0;
 }
+
+/* Backdrop Style */
 ::backdrop {
     background-image: linear-gradient(
       45deg,
@@ -11,77 +14,97 @@
       green
     );
     opacity: 0.75;
-  }
-.container{
+}
+
+/* Container Layout */
+.container {
     min-height: 100vh;
     display: grid;
     grid-template-rows: minmax(min-content, 13vh) auto minmax(min-content, 5vh);
 }
-.header{
-    background-color:  #06D6A0;
+
+/* Header Style */
+.header {
+    background-color: #06D6A0;
     padding-left: 2vw;
 }
-.content{
+
+/* Main Content Style */
+.content {
     display: grid;
-    /* padding: 3vh 1vw; */
     background-color: #FFD166;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
 }
+
+/* Dialog Box Style */
 dialog {
-    position: fixed; /* Or absolute */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Additional styles for the dialog box */
 }
 
-.addBook{
+/* Add Book Button Style */
+.addBook {
     display: flex;
     justify-content: center;
 }
+
 .addBookButtonOpen {
-    margin: 3vh ;
+    margin: 3vh;
     height: 100px;
-    width: clamp(80px,25vw,600px);
-    font-size: clamp(12px,25px,40px);
+    width: clamp(80px, 25vw, 600px);
+    font-size: clamp(12px, 25px, 40px);
 }
-.contentCards{
 
+/* Content Cards Grid */
+.contentCards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-    grid-auto-rows: minmax(350px,1.1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: minmax(350px, 1.1fr);
 }
 
-.formInputs{
+/* Form Inputs Style */
+.formInputs {
     height: 25px;
     margin: 1vh 1vw;
 }
 
-.addBookButtonClose ,.bookButtonClose{
+/* Buttons Style */
+.addBookButtonClose,
+.bookButtonClose {
     height: 30px;
     width: 100%;
 }
+
 .button-container {
     display: flex;
-    justify-content: space-between; /* Aligns one item to each end */
+    justify-content: space-between;
 }
-.bookCard{
+
+/* Book Card Style */
+.bookCard {
     margin-right: 3vw;
     margin-bottom: 3vh;
     background-color: #E76F51;
 }
-.bookCard h2{
+
+.bookCard h2 {
     color: black;
 }
-.cardButtonsContainer{
+
+.cardButtonsContainer {
     display: flex;
     justify-content: space-between;
 }
-.cardButtons{
+
+.cardButtons {
     height: 30px;
     width: 100%;
 }
-.footer{
+
+/* Footer Style */
+.footer {
     background-color: #06D6A0;
 }
